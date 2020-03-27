@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = 2;
+        let y = '3';
+        document.write(`variable x: ${x} <br> variable y: ${y}`);
+        let mayor = x > y;
+        console.log(`mayor: ${mayor}`);
+        let mayorIgual = x >= y;
+        console.log(`mayor o igual: ${mayorIgual}`);
+        let menor = x < y;
+        console.log(`menor: ${menor}`);
+        let menorIgual = x <= y;
+        console.log(`menor o igual: ${menorIgual}`);
+        let igual = x == y;
+        console.log(`igual - mismo valor: ${igual}`);
+        let igualEstricto = x === y;
+        console.log(`igual estricto - mismo tipo de dato y mismo valor: ${igualEstricto}`);
+
+        let variable = false;
+        let $variable2 = true;
+        //
+        var resultadoAND = variable && $variable2;
+        // alert(`resultado AND = ${resultadoAND}`);
+
+        var resultadoOR = variable || $variable2;
+        alert(`resultado OR = ${resultadoOR}`);
+
+        var resultadoNOT = !variable;
+
+        let respuesta = prompt("ingrese un numero mayor a 5");
+
+        if (respuesta > 5) {
+            alert("Buen trabajo"); {
+                if (respuesta == 6) {
+                    alert("Perfecto");
+                } else {
+                    alert("Esperabamos que fuese un 6");
+                }
+            }
+        } else {
+            alert("No es un numero mayor a 5");
+        }
+
+        let opcionUsuario = prompt("ingrese un numero del 1 al 3")
+
+        switch (opcionUsuario) {
+            case "1":
+                alert("escogio el numero 1");
+                break;
+            case "2":
+                alert("escogio el numero 2");
+            case "3":
+                alert("escogio el numero 3");
+                break;
+            default:
+                alert("No es un numero entre 1 y 3");
+                break;
+        }
+    </script>
+</body>
+
+</html>
